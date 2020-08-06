@@ -1,0 +1,75 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1px 1px;
+  grid-template-areas: "field_div table_div";
+}
+
+.table_div { grid-area: table_div; }
+
+.field_div { 
+  grid-area: field_div;
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+}
+
+.input_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_div {
+  display: flex;
+  justify-content: center;
+}
+
+table.numberTable {
+  border: 2px solid black;
+  width: 55%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+td.numberTableBlock {
+  border: 2px solid black;
+  width: 33%;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input.numberInput {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  margin: auto;
+  padding: 1rem 1rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  width: 35%;
+  transition: all 0.3s;
+}
+
+button {
+  width: 25%;
+  height: 14%;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #030303;
+  margin:0 0.3em 0.3em 0;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  font-size: 1rem;
+  text-align:center;
+  border-radius: 1rem;
+}
+
+button:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+}
